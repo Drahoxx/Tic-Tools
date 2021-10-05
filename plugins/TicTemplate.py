@@ -11,10 +11,11 @@ def main(argv : str[]):
 
 	def infos():
 		plugin_name = "Dummy"	#The name of the plugin
+		desc = '''The description of your plugin'''
 		version = 0				#used in tic-pip
 		creator = "John Doe"	#you :3
 		github_repo = None		#if you share your code
-		return (plugin_name,version,creator,github_repo)
+		return (plugin_name,desc,version,creator,github_repo)
 	""")
 
 def setup():
@@ -22,6 +23,7 @@ def setup():
 
 def infos():
 	plugin_name = "TicTemplate"
+	desc = "A plugin to get a basic template for creating plugins for TicTools"
 	version = 1
 	creator = "Drahoxx"
 	github_repo = None
